@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hantec Financial Acquirable — Account Types</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .logo-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #000;
+    }
+    .logo-bar img {
+      height: 60px;
+    }
+    .logo-bar .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .open-account {
+      background-color: #e60000;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+    .hero-section {
+      background: url('https://www.hantec.com/static/images/sr-ban1.jpg') no-repeat center center/cover;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-section h1, .hero-section .subtitle {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-section h1 {
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .hero-section .subtitle {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #ddd;
+      line-height: 1.5;
+    }
+    .accounts-section {
+      padding: 60px 30px;
+      background-color: #f5f4f4;
+    }
+    .accounts-section h2 {
+      font-size: 28px;
+      color: #e60000;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .account-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .account-card {
+      background: #910215;
+      border-radius: 8px;
+      padding: 25px;
+      text-align: left;
+    }
+    .account-card img {
+      max-width: 80px;
+      margin-bottom: 20px;
+    }
+    .account-card h3 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .account-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: #ccc;
+      font-size: 14px;
+    }
+    .account-card ul li {
+      margin-bottom: 10px;
+    }
+    .account-card .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #e60000;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+    .account-details {
+      padding: 60px 30px;
+      background-color: #241515;
+      color: #ccc;
+    }
+    .account-details table {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    .account-details th, .account-details td {
+      border: 1px solid #d30c0c;
+      padding: 12px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .account-details th {
+      background-color: #cc2f2f;
+      color: #fff;
+    }
+    footer {
+      background-color: #050000;
+      padding: 40px 20px;
+      color: #ccc;
+      text-align: center;
+    }
+    footer a {
+      color: #e60000;
+      text-decoration: none;
+    }
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .footer-nav a {
+      font-size: 14px;
+      color: #ccc;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      border-top: 1px solid #e70e0e;
+      padding-top: 20px;
+      font-size: 13px;
+      color: #777;
+    }
+    @media (max-width: 768px) {
+      .account-cards {
+        grid-template-columns: 1fr;
+      }
+      .account-details table, .account-details th, .account-details td {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo / Nav -->
+  <div class="logo-bar">
+    <div class="left">
+      <img src="HanteLogo.png" alt="Hantec Logo" />
+    </div>
+    <div class="right">
+      <a href="www.hantec.com.html">HOME</a>
+      <a href="https://www.hantec.com/as/tc/client-center/register?token=nw57HnM4BkM93Yr5B7GNig%3D%3D&lang=en-US">LOGIN</a>
+      <a href="#">English - Akwa Ibom</a>
+      <a href="https://www.hantec.com/as/tc/client-center/register?token=nw57HnM4BkM93Yr5B7GNig%3D%3D&lang=en-US" class="open-account">Open Account</a>
+    </div>
+  </div>
+
+  <!-- Hero / Intro -->
+  <section class="hero-section">
+    <h1>Account Types</h1>
+    <p class="subtitle">Choose the account that matches your trading style — whether you're starting small, testing strategies, or trading professionally.</p>
+  </section>
+
+  <!-- Account Cards -->
+  <section class="accounts-section">
+    <h2>Our Account Types</h2>
+    <div class="account-cards">
+      <!-- STANDARD Account -->
+      <div class="account-card">
+        <img src="https://www.hantec.com/static/images/sr-p1.jpg" alt="Standard Account">
+        <h3>STANDARD Account</h3>
+        <ul>
+          <li>Zero-commission trading</li>
+          <li>Floating spreads</li>
+          <li>Leverage up to 1:1000</li>
+          <li>Micro-lot trading (0.01 lots)</li>
+          <li>No extra commission fees</li>
+        </ul>
+        <a href="https://www.hantec.com/as/tc/client-center/register?token=nw57HnM4BkM93Yr5B7GNig%3D%3D&lang=en-US" class="btn">Let’s Start</a>
+      </div>
+      <!-- CENT Account -->
+      <div class="account-card">
+        <img src="https://www.hantec.com/storage/images/img202508151749041411.png" alt="Cent Account">
+        <h3>CENT Account</h3>
+        <ul>
+          <li>Ideal for EAs, scalping & micro trading</li>
+          <li>Leverage up to 1:500</li>
+          <li>Trade in cents</li>
+          <li>Low cost of entry</li>
+        </ul>
+        <a href="https://www.hantec.com/as/tc/client-center/register?token=nw57HnM4BkM93Yr5B7GNig%3D%3D&lang=en-US" class="btn">Let’s Start</a>
+      </div>
+      <!-- PRO Account -->
+      <div class="account-card">
+        <img src="https://www.hantec.com/storage/images/img202508151749122698.png" alt="Pro Account">
+        <h3>PRO Account</h3>
+        <ul>
+          <li>Lower spreads on gold, silver, forex</li>
+          <li>Market execution</li>
+          <li>Leverage up to 1:500</li>
+          <li>Priority support / trading conditions</li>
+        </ul>
+        <a href="https://www.hantec.com/as/tc/client-center/register?token=nw57HnM4BkM93Yr5B7GNig%3D%3D&lang=en-US" class="btn">Let’s Start</a>
+      </div>
+      <!-- ECN Account -->
+      <div class="account-card">
+        <img src="https://www.hantec.com/storage/images/img202508151749272782.png" alt="ECN Account">
+        <h3>ECN Account</h3>
+        <ul>
+          <li>Direct market access</li>
+          <li>Raw spreads with commission</li>
+          <li>Leverage up to 1:200</li>
+          <li>No requotes, faster execution</li>
+        </ul>
+        <a href="https://www.hantec.com/as/tc/client-center/register?token=nw57HnM4BkM93Yr5B7GNig%3D%3D&lang=en-US" class="btn">Let’s Start</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Account Details Table -->
+  <section class="account-details">
+    <table>
+      <thead>
+        <tr>
+          <th>Account Type</th>
+          <th>Spread</th>
+          <th>Leverage</th>
+          <th>Currency</th>
+          <th>Products</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>STANDARD</td>
+          <td>Floating Spread</td>
+          <td>Up to 1:1000</td>
+          <td>USD</td>
+          <td>Forex, Metals, Commodities, Indices, Stocks CFDs</td>
+        </tr>
+        <tr>
+          <td>CENT</td>
+          <td>Floating Spread</td>
+          <td>Up to 1:500</td>
+          <td>USC</td>
+          <td>Forex, Metals, Commodities, Indices, Stocks CFDs</td>
+        </tr>
+        <tr>
+          <td>PRO</td>
+          <td>Lower Spreads on Gold/Silver/Forex</td>
+          <td>Up to 1:500</td>
+          <td>USD</td>
+          <td>Same as STANDARD + Premium conditions</td>
+        </tr>
+        <tr>
+          <td>ECN</td>
+          <td>Raw spreads with commission</td>
+          <td>Up to 1:200</td>
+          <td>USD</td>
+          <td>Direct Market Access, Deeper Liquidity</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/2348089549025?text=Hello%20Hantec%20Financial%20Academy%2C%20I%20need%20support"
+   class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+   <span class="tooltip">Chat with us on WhatsApp</span>
+</a>
+
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: bounce 2s infinite;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 70px; /* distance above button */
+  right: 0;
+  background: #3c28ee;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.whatsapp-float:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+</style>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-nav">
+      <a href="www.hantec.com.html">Home</a>
+      <a href="https://chat.whatsapp.com/HDgxjcgbusa1XhJ8uhLx2k">Trading Conditions</a>
+      <a href="#Our Account Types">Account Types</a>
+      <a href="https://www.hantec.com/as/tc/client-center/register?token=E%2BYwdvsfuQj%2B7%2F%2FQhFEwDA%3D%3D&lang=en-US">Products</a>
+      <a href="https://wa.me/2348089549025?text=Hello%20Hantec%20Financial%20Academy%2C%20I%20need%20support">Support</a>
+    </div>
+    <div class="footer-bottom">
+      <a href="https://www.hantec.com/af/en/legal/risk-disclosures.html">Risk Disclosure</a> | 
+      <a href="https://www.hantec.com/af/en/legal/privacy-policy.html">Privacy Policy</a> | 
+      <a href="https://www.hantec.com/af/en/legal/privacy-policy.html">Terms & Conditions</a><br/>
+      © 2025 Hantec Financial Acquirable. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

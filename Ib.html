@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hantec Financial Acquirable — IB Partnership</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin:0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .logo-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #000;
+    }
+    .logo-bar img {
+      height: 40px;
+    }
+    .logo-bar .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .open-account {
+      background-color: #e60000;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+    .hero-section {
+      background: url('https://www.hantecfinancial.com/affiliate/introducing-broker/staticib/enaf-assets/images/midkv-l.jpg') no-repeat center center/cover;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(8, 1, 1, 0.5);
+    }
+    .hero-section h1, .hero-section p, .hero-section form, .hero-section .cta {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-section h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .hero-section p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+      color: #ddd;
+    }
+    .hero-section form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .hero-section input, .hero-section select {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      font-size: 15px;
+      color: #d61212;
+    }
+    .hero-section button {
+      background-color: #e60000;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .features {
+      padding: 60px 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 30px;
+    }
+    .feature-card {
+      background: #cf0707f3;
+      padding: 25px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .feature-card img {
+      max-width: 80px;
+      margin-bottom: 15px;
+    }
+    .feature-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+    .footer-nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background-color: #080101;
+      flex-wrap: wrap;
+    }
+    .footer-column {
+      width: 18%;
+      min-width: 180px;
+      margin-bottom: 20px;
+    }
+    .footer-column h3 {
+      color: #f44336;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .footer-column h4 {
+      color: #999;
+      font-size: 13px;
+      margin: 15px 0 5px;
+    }
+    .footer-column a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 4px 0;
+    }
+    .footer-column a:hover {
+      color: #fff;
+    }
+    .footer-column a.blue-link {
+      color: #64b5f6;
+    }
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #ccc;
+    }
+    .footer-bottom a {
+      color: #64b5f6;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer-bottom span {
+      color: #777;
+      margin-left: 15px;
+    }
+    .slash {
+      color: #666;
+    }
+    @media(max-width:768px) {
+      .features {
+        grid-template-columns:1fr;
+      }
+      .footer-column {
+        width: 45%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo / Navigation -->
+  <div class="logo-bar">
+    <div class="left">
+      <img src="HanteLogo.png" alt="Your Logo" />
+    </div>
+    <div class="right">
+      <a href="www.hantec.com.html">HOME</a>
+      <a href="https://www.hantec.com/as/tc/client-center/register?token=E%2BYwdvsfuQj%2B7%2F%2FQhFEwDA%3D%3D&lang=en-US">Login</a>
+      <a href="#">English – Akwa Ibom</a>
+      <a href="https://www.hantec.com/as/tc/client-center/register?token=E%2BYwdvsfuQj%2B7%2F%2FQhFEwDA%3D%3D&lang=en-US" class="open-account">Open Account</a>
+    </div>
+  </div>
+
+  <!-- Hero / IB Form -->
+  <section class="hero-section">
+    <h1>Introducing Broker Program</h1>
+    <p>Become an Introducing Broker with Hantec Financial Acquirable. Expand your client base rapidly and earn fixed commission on every trade they make.</p>
+    <form>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="text" name="country" placeholder="Country & Region" required>
+      <input type="tel" name="mobile" placeholder="Mobile Number" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <button type="submit">Start Now</button>
+    </form>
+  </section>
+
+  <!-- Features / How It Works -->
+  <div class="features">
+    <div class="feature-card">
+      <h3>01 / Complete the application</h3>
+      <p>Fill in the form above and submit your details.</p>
+    </div>
+    <div class="feature-card">
+      <h3>02 / Share your referral link</h3>
+      <p>Use your link to invite traders & partners.</p>
+    </div>
+    <div class="feature-card">
+      <h3>03 / Clients trade</h3>
+      <p>They trade Forex, metals, energy & more.</p>
+    </div>
+    <div class="feature-card">
+      <h3>04 / Receive commissions</h3>
+      <p>Commissions are calculated and paid automatically.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Trusted Brand</h3>
+      <p>30+ years of industry presence and licenses worldwide.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Instant Withdrawals</h3>
+      <p>Withdraw earned commissions whenever you want.</p>
+    </div>
+  </div>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/2348089549025?text=Hello%20Hantec%20Financial%20Academy%2C%20I%20need%20support"
+   class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+   <span class="tooltip">Chat with us on WhatsApp</span>
+</a>
+
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: bounce 2s infinite;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 70px; /* distance above button */
+  right: 0;
+  background: #3c28ee;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.whatsapp-float:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+</style>
+  
+<!-- Footer -->
+  <div class="footer-nav">
+    <div class="footer-column">
+      <h3>/ About</h3>
+      <a href="https://www.hantec.com/af/en/about/hantec-story.html">Hantec Story</a>
+      <a href="https://www.hantec.com/af/en/about/why-hantecfinancial.html">Why Hantec Financial</a>
+      <a href="https://www.hantec.com/af/en/about/licenses.html">Licenses</a>
+      <a href="https://www.hantec.com/af/en/about/hantec-news.html">Hantec News</a>
+      <a href="https://www.hantec.com/af/en/about/announcement.html">Announcement</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>/ Trading</h3>
+      <h4>Trading Condition</h4>
+      <a href="Accounttype.html">• Account Types</a>
+      <a href="https://www.hantec.com/af/en/trading/trading-condition/demo-account.html">• Demo Account</a>
+      <a href="https://www.hantec.com/af/en/trading/trading-condition/deposit-withdrawal.html">• Deposit and Withdrawal</a>
+      <h4>Products</h4>
+      <a href="#">• Forex</a>
+      <a href="#">• Bullion</a>
+      <a href="#">• CFD</a>
+      <a href="https://www.hantec.com/af/en/trading/products/contract-for-difference/commodities.html">  Commodities</a>
+      <a href="https://www.hantec.com/af/en/trading/products/contract-for-difference/stocks.html">  Stocks</a>
+      <a href="https://www.hantec.com/af/en/trading/products/contract-for-difference/indices.html">  Indices</a>
+      <a href="https://www.hantec.com/af/en/trading/products/trading-rules.html">• Trading Rules</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>/ Platform</h3>
+      <h4>Meta Trader</h4>
+      <a href="https://www.hantec.com/af/en/platform/meta-trader/mt5.html">• Meta Trader 5</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>/ Analytics</h3>
+      <h4>Trading Tools</h4>
+      <a href="https://www.hantec.com/af/en/analytics/trading-tools/economic-calendar.html">• Economic Calendar</a>
+      <a href="https://www.hantec.com/af/en/analytics/trading-tools/trading-central.html">• Trading Central</a>
+      <h4>Analysis</h4>
+      <a href="https://chat.whatsapp.com/HDgxjcgbusa1XhJ8uhLx2k">• Market Analysis</a>
+      <a href="https://www.hantec.com/af/en/analytics/analysis/trader-life.html">• Trader Life</a>
+      <h4>Academy</h4>
+      <a href="#">• Trading Guides</a>
+      <a href="https://www.hantec.com/af/en/analytics/academy/blogs.html">• Blogs</a>
+      <a href="https://www.hantec.com/af/en/analytics/academy/glossary.html">• Glossary</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>/ Affiliate</h3>
+      <a href="Ib.html" class="blue-link">Introducing Broker</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <a href="https://www.hantec.com/af/en/legal/risk-disclosures.html">Risk Disclosure</a>
+    <span class="slash">/</span>
+    <a href="https://www.hantec.com/af/en/legal/privacy-policy.html">Privacy Policy</a>
+    <span class="slash">/</span>
+    <a href="https://www.hantec.com/af/en/legal/complaints-procedure.html">Complaints Procedure</a>
+    <span class="slash">/</span>
+    <a href="https://www.hantec.com/af/en/legal/disclaimer.html">Disclaimer</a>
+    <span class="slash">/</span>
+    <a href="https://www.hantec.com/af/en/legal/cookie-policy.html">Cookie Policy</a>
+    <span>©2025 Hantec Financial</span>
+  </div>
+
+</body>
+</html>
